@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  margin-top: 92px;
+  width: 100%;
+  background-image: url(/image/bg_1.jpg);
+  color: white;
+}
+
+.slideCarousel {
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideCarouselText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 50px;
+}
+
+.slideCarouselTextBlog {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.slideCarouselImg {
+  width: 600px;
+  height: 600px;
+}
+
+.slideCarouselSecond {
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideCarouselTextSecond {
+  margin-left: 50px;
+}
+
+.slideCarouselTextBlog2 p, .slideCarouselTextBlog p {
+  margin: 0;
+}
+
+.carousel-itemThird {
+  background-image: url(/image/bg_3.jpg);
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home1 {
+  width: 100%;
+  height: 1000px;
+  background: url(/image/gallery-1.jpg), url(/image/gallery-2.jpg), url(/image/gallery-3.jpg), url(/image/gallery-4.jpg), url(/image/bg_2.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 25% 50%, 25% 50%, 25% 50%, 25% 50%, 100% 50%;
+  background-position: 0% 0%, 33.333% 0%, 66.666% 0%, 100% 0%, 50% 100%;
+  background-clip: content-box;
+  position: relative;
+  isolation: isolate;
+}
+
+.home1::after {
+  content: "";
+  position: absolute;
+  background-image: url(/image/bg_4.jpg);
+  background-size: 100% 50%;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.icon {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.iconItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: max-content;
+  margin: 50px;
+}
+
+.iconItemImg {
+  width: 100px;
+  height: 100px;
+  border: 2px solid orange;
+  padding: 15px;
+}
+
+.iconItemColorNumb {
+  color: orange;
+  margin-top: 20px;
+  font-size: 50px;
+}
+
+.iconItemColorText {
+  color: white;
+  font-size: 20px;
+}
+
+.home2 {
+  width: 100%;
+  height: 1000px;
+  color: orangered;
+  background-image: url(/image/bg_4.jpg);
+  position: relative;
+  isolation: isolate;
+}
+
+.home2::after {
+  content: "";
+  background-image: url(/image/about.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 40% 80%;
+  inset: 0;
+  position: absolute;
+}
+
+.menuHome2 {
+  width: 60%;
+  height: 80%;
+  position: absolute;
+  right: 0;
+}
+
+.menuHome2Choice {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menuHome2ChoiceUl {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menuHome2ChoiceUl li {
+  list-style: none;
+  padding: 10px;
+  margin: 20px 5px;
+  border: 1px solid orange;
+}
+
+.menuHome2ChoiceUl a {
+  text-decoration: none;
+  color: orange;
+}
+
+.menuHome2Sample {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 40px;
+  height: 80%;
+}
+
+.menuHome2SampleItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70%;
+  margin: 0 20px;
+}
+
+.menuHome2SampleItem p {
+  text-align: center;
+}
+
+.menuHome2SampleItemImg {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+  background-size: cover;
+}
+
+#first {
+  background-image: url(/image/pizza-1.jpg);
+}
+
+#second {
+  background-image: url(/image/pizza-2.jpg);
+}
+
+#third {
+  background-image: url(/image/pizza-3.jpg);
+}
+
+#addCard {
+  padding: 5px 10px;
+  color: white;
+  border: 1px solid white;
+}

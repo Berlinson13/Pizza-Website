@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #141313;
+}
+
+.divfooter {
+  width: 90%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 0.5fr 0.5fr;
+  column-gap: 20px;
+  color: white;
+  justify-items: center;
+  align-items: flex-start;
+  padding: 0 250px;
+}
+
+.footerItem2 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.footerItem1 > h3, .footerItem3 > h3, .footerItem4 > h3, .footerItem2 > h3 {
+  margin-bottom: 80px;
+}
+
+.footerItem2Part1 {
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+#footterFistBlock {
+  grid-column: 1;
+  grid-row: 1/3;
+}
+
+#footterFistBlock img {
+  width: 100px;
+  height: 100px;
+}
+
+.footterFistBlockText {
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
+  align-items: flex-end;
+}
+
+.footterFistBlockinfo {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footerItem3 p {
+  margin-bottom: 15px;
+}
+
+.footerItem4, .footerItem3 {
+  display: grid;
+}
+
+.footerItem4Item {
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+}
+
+.footerItem4Item img {
+  width: 20px;
+  height: 20px;
+}
